@@ -1,10 +1,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # my-repos
 https://my-repos.netlify.app/
 =======
 =======
 Netlify link - https://my-repos.netlify.app/
+=======
+Netlify link - https://mygithub-repos.netlify.app/
+>>>>>>> fee9074 (Update README.md)
 
 >>>>>>> 9ebb67a (Update README.md)
 # Getting Started with Create React App
