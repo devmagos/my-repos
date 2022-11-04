@@ -1,4 +1,28 @@
 .App {
   text-align: center;
+}
+
+.navbar {
+  background-color: lightskyblue;
+  height: 20px;
+  padding: 20px;
+  color: #fff;
+}
+
+.links {
+  margin-left: 30px;
+  padding: 20px;
+  color: #fff;
+  font-size: large;
+  text-decoration: none;
+}
+
+.portfolio {
+  display: flex;
+}
+
+.repo-divs {
+  padding: 30px;
   margin: 50% auto;
+  border: 3px dotted grey;
 }
