@@ -4,7 +4,10 @@
 
 .navbar {
   background-color: lightskyblue;
+  position: fixed;
   height: 20px;
+  width: 100%;
+  margin: auto;
   padding: 20px;
   color: #fff;
 }
@@ -23,6 +26,6 @@
 
 .repo-divs {
   padding: 30px;
-  margin: 50% auto;
+  margin: 20% auto;
   border: 3px dotted grey;
 }
