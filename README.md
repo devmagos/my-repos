@@ -1,4 +1,4 @@
-Netlify link - https://my-repos.netlify.app/
+Netlify link - https://mygithub-repos.netlify.app/
 
 # Getting Started with Create React App
 
