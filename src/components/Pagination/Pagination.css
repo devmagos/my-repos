@@ -3,7 +3,7 @@
     flex-direction: row;
     margin: 0% 40%;
     position: fixed;
-    bottom: 150px;
+    bottom: 80px;
     right: 100px;
 }
     
@@ -14,7 +14,7 @@
 .page {
     list-style-type: none;
     font-size: 1rem;
-    padding: 10px;
+    padding: 20px;
     margin: 1px;
     width: 15px;
     border-radius: 5px;
