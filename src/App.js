@@ -1,7 +1,6 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import Nav from './components/Nav/Nav.js';
 import Repo from './components/Repo/Repo.js'
 import Pagination from './components/Pagination/Pagination.js';
 
@@ -32,7 +31,6 @@ const paginate = (pageNumber) => setCurrentPage(pageNumber)
   return (
 
     <div className="App">
-      <Nav />
       <div className='portfolio'>
         <Repo repos={currentRepos}  />
         <Pagination reposPerPage={reposPerPage} totalRepos={repos.length} paginate={paginate} />
