@@ -1,16 +1,11 @@
-.App {
-  text-align: center;
+* {
+  font-family: 'Roboto', sans-serif;
 }
 
-.navbar {
-  background-color: lightskyblue;
-  position: fixed;
-  height: 20px;
-  width: 100%;
-  margin: auto;
-  padding: 20px;
-  color: #fff;
+.App {
+  display: flex;
 }
+
 
 .links {
   margin-left: 30px;
@@ -20,12 +15,86 @@
   text-decoration: none;
 }
 
-.portfolio {
-  display: flex;
+.repo-divs {
+  padding: 8px;
+  margin: 8% auto;
+  border: 3px dotted grey;
 }
 
-.repo-divs {
-  padding: 30px;
-  margin: 20% auto;
-  border: 3px dotted grey;
+.repo_display {
+  font-size: 1.5rem;
+  text-align: justify;
+  list-style-type: none;
+  color: skyblue;
+  letter-spacing: 10px;
+}
+
+.repos_display {
+  text-align: justify;
+  list-style-type: none;
+  color: skyblue;
+  letter-spacing: 10px;
+
+
+  /* TEXT COLOR GRADIENT ANIMATION */
+   text-transform: lowercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 20% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 13s linear infinite;
+  /* display: inline-block; */
+      font-size: 1.5rem;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.display {
+  text-align: justify;
+  list-style-type: none;
+  color: skyblue;
+  letter-spacing: 10px;
+
+
+  /* TEXT COLOR GRADIENT ANIMATION */
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 20% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 13s linear infinite;
+  /* display: inline-block; */
+      font-size: 2rem;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
