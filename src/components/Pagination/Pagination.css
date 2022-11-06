@@ -1,10 +1,8 @@
-.pagination {
+.pagination, .nav {
     display: flex;
     flex-direction: row;
-    margin: 0% 40%;
-    position: fixed;
-    bottom: 80px;
-    right: 100px;
+    justify-content: center;
+    align-items: center;
 }
     
 .link {

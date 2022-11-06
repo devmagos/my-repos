@@ -3,17 +3,16 @@ import * as ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import './index.css';
 import App from './App';
-import Home from './components/Home/Home.js'
 import Repo from './components/Repo/Repo.js'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/Home/Home" element={<Home />} />
       <Route path="/Repo/Repo" element={<Repo />} />
       </Routes>
     </BrowserRouter>

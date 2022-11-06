@@ -1,6 +1,8 @@
   .repo {
     display: flex;
-    margin: 10% 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .repo-divs {
@@ -11,3 +13,85 @@
     border: 3px dotted grey;
   }
   
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .repo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .repo-divs {
+    padding: 10px;
+    width: 400px;
+    border-radius: 8px;
+    border: 3px dotted grey;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .repo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .repo-divs {
+    padding: 10px;
+    width: 400px;
+    border-radius: 8px;
+    border: 3px dotted grey;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .repo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .repo-divs {
+    padding: 10px;
+    width: 400px;
+    margin: 20px;
+    border-radius: 8px;
+    border: 3px dotted grey;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .repo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .repo-divs {
+    padding: 10px;
+    width: 600px;
+    margin: 20px;
+    border-radius: 8px;
+    border: 3px dotted grey;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .repo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .repo-divs {
+    padding: 10px;
+    width: 600px;
+    margin: 20px;
+    border-radius: 8px;
+    border: 3px dotted grey;
+  }
+}
