@@ -2,7 +2,7 @@ import React from 'react'
 import './Repo.css';
 
 
-const Repo = ({repos}) => {
+const Repo = ({repos, paginate}) => {
 
   if(repos === !repos){
     throw new Error("Repo Doesn't Exist!")
@@ -17,7 +17,11 @@ const Repo = ({repos}) => {
       <h2>REPOSITORIES LIST 🔥</h2>
           <ul class="list-group">
             {repos.map(repo => (
-               <li key={repo.id} className='repos_display'  class="list-group-item list-group-horizontal-lg">{repo.name}</li>
+               <li key={repo.id} className='repos_display'  class="list-group-item list-group-horizontal-lg">
+                <a onClick={() => paginate(repo.id)} href={repo.html_url} className='link'>
+                  {repo.name}
+                </a>
+              </li>
             ))
             }
           </ul>
