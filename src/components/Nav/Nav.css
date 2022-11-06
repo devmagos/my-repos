@@ -1,6 +1,7 @@
 .navbar {
     background-color: lightskyblue;
     position: fixed;
+    text-align: center;
     height: 20px;
     width: 100%;
     margin: auto;

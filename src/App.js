@@ -1,25 +1,41 @@
 import './App.css';
-import { Link } from "react-router-dom";
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import Nav from './components/Nav/Nav.js';
+import Repo from './components/Repo/Repo.js'
+import Pagination from './components/Pagination/Pagination.js';
+
 
 function App() {
-  return (
-    <div className="App">
-      <nav className='navbar'>
-        <Link to="../Home/Home" className='links'>Home</Link>
-        <Link to="../Repo/Repo" className='links'>Repo</Link>
-      </nav>
-      <div className='portfolio'>
-      <div className='repo-divs'>
-        <h1>
-      GITHUB PORTFOLIO 🏆
-        </h1>
-      </div>
+  const [repos, setRepos] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [reposPerPage] = useState(5);
 
-      <div className='repo-divs'>
-        <h2>
-          REPO LIST 🔥
-        </h2>
-      </div>
+  useEffect(() => {
+    axios.get('https://api.github.com/users/ernestmoi/repos')
+    .then(response => {
+      console.log(response)
+      setRepos(response.data)
+    })
+    .catch(error => console.log(error))
+  }, [])
+  
+// Get Current Posts
+const indexOfLastRepo = currentPage * reposPerPage;
+const indexOfFirstRepo = indexOfLastRepo - reposPerPage;
+const currentRepos = repos.slice(indexOfFirstRepo, indexOfLastRepo);
+
+
+// CURRENT PAGE
+const paginate = (pageNumber) => setCurrentPage(pageNumber)
+
+  return (
+
+    <div className="App">
+      <Nav />
+      <div className='portfolio'>
+        <Repo repos={currentRepos}  />
+        <Pagination reposPerPage={reposPerPage} totalRepos={repos.length} paginate={paginate} />
       </div>
     </div>
   );
