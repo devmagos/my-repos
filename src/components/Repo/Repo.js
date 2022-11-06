@@ -1,10 +1,12 @@
 import React from 'react'
-// import { useState } from 'react';
 import './Repo.css';
 
 
 const Repo = ({repos}) => {
-  // const [reposPerPage, setReposPerPage] = useState(5);
+
+  if(repos === !repos){
+    throw new Error("Repo Doesn't Exist!")
+    }
   
   return (
     <div className="repo">

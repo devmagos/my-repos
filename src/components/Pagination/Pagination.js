@@ -1,6 +1,9 @@
 import React from 'react';
 import './Pagination.css';
  const Pagination = ({reposPerPage, totalRepos, paginate}) => {
+if(reposPerPage === !reposPerPage && totalRepos === !totalRepos && paginate === !paginate){
+throw new Error("Page Doesn't Exist!")
+}
 
     const pageNumbers = [];
 
@@ -8,7 +11,7 @@ import './Pagination.css';
         pageNumbers.push(i);
     }
   return (
-    <nav>
+    <nav className='nav'>
         <ul className='pagination'>
             {pageNumbers.map(number => (
                 <li key={number} className='page'>

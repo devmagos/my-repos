@@ -2,8 +2,9 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.App {
+.portfolio {
   display: flex;
+  flex-direction: column;
 }
 
 
@@ -15,9 +16,11 @@
   text-decoration: none;
 }
 
-.repo-divs {
+.repos-divs {
   padding: 8px;
-  margin: 8% auto;
+  justify-content: center;
+  align-items: center;
+  /* margin: 8% auto; */
   border: 3px dotted grey;
 }
 
