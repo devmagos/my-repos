@@ -1,7 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # my-repos
 https://my-repos.netlify.app/
 =======
+=======
+Netlify link - https://my-repos.netlify.app/
+
+>>>>>>> 9ebb67a (Update README.md)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
