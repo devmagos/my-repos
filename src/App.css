@@ -18,10 +18,10 @@
 
 .repos-divs {
   padding: 8px;
+  margin: 15px auto;
   justify-content: center;
   align-items: center;
-  /* margin: 8% auto; */
-  border: 3px dotted grey;
+  border: 2px dotted grey;
 }
 
 .repo_display {
